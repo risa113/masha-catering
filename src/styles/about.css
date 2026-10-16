@@ -1,0 +1,212 @@
+/* About Page CSS for Masha Catering Services */
+
+.page-hero {
+  position: relative;
+  padding: 160px 0 90px;
+  background: linear-gradient(
+    135deg,
+    rgba(50, 6, 12, 0.95) 0%,
+    rgba(114, 18, 30, 0.9) 100%
+  ), url('https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #FFFFFF;
+  text-align: center;
+  overflow: hidden;
+}
+
+.page-hero-title {
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.page-hero-subtitle {
+  font-size: 1.15rem;
+  color: #F4EDE0;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* About Intro Section */
+.about-intro-section {
+  padding: 6rem 0;
+  background: var(--color-cream);
+}
+
+.about-intro-img-grid {
+  position: relative;
+}
+
+.about-main-img {
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border: 1px solid var(--color-border-subtle);
+}
+
+.about-sub-img {
+  position: absolute;
+  bottom: -30px;
+  right: -20px;
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  border: 4px solid #FFFFFF;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-badge-card {
+  position: absolute;
+  top: 30px;
+  left: -20px;
+  background: rgba(74, 11, 19, 0.95);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.4rem;
+  color: #FFFFFF;
+  box-shadow: var(--shadow-md);
+  backdrop-filter: blur(8px);
+}
+
+.about-badge-card span {
+  font-family: var(--font-luxury);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  color: var(--color-gold-light);
+  text-transform: uppercase;
+}
+
+.about-badge-card h4 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+/* Pillars Section */
+.pillars-section {
+  padding: 6rem 0;
+  background: #FFFFFF;
+}
+
+.pillar-card {
+  background: var(--color-cream);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 1.75rem;
+  height: 100%;
+  transition: all var(--transition-base);
+}
+
+.pillar-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-gold);
+  box-shadow: var(--shadow-md);
+}
+
+.pillar-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  color: var(--color-gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Event Types Section */
+.events-we-cater-section {
+  padding: 6rem 0;
+  background: var(--color-primary-dark);
+  color: #FFFFFF;
+}
+
+.event-type-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(197, 155, 39, 0.25);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all var(--transition-base);
+}
+
+.event-type-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--color-gold);
+  transform: translateY(-4px);
+}
+
+.event-type-dot {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+/* Prep & Service section */
+.prep-section {
+  padding: 6rem 0;
+  background: var(--color-cream);
+}
+
+.prep-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-border-subtle);
+  height: 100%;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.prep-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-gold);
+}
+
+.prep-card-img {
+  height: 220px;
+  overflow: hidden;
+}
+
+.prep-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.prep-card:hover .prep-card-img img {
+  transform: scale(1.06);
+}
+
+.prep-card-body {
+  padding: 1.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .about-sub-img {
+    display: none;
+  }
+  .about-badge-card {
+    left: 10px;
+    top: 10px;
+  }
+}
